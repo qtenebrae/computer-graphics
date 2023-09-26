@@ -28,6 +28,7 @@ jobs:
         pip install pytest
         
   test:
+    needs: build
     runs-on: self-hosted
     steps:
       - name: Set up Python 3.10
